@@ -32,6 +32,13 @@ If present, use `.github/agents/brainsback-reviewer.md` as the review rubric.
 - The current tests do not yet assert `state.gameOver === true` in a UI flow, so adding an integration-style test would harden the end-to-end behavior.
 - No external dependencies were added.
 
+## Additional Artifact Update
+
+- **artifacts/socratic_review.md**: Added the initial user-profile question block required by the Socratic workflow.
+- Filled each initial question with transcript-grounded data only.
+- When the transcript did not include a literal answer, the artifact now explicitly marks the response as unavailable instead of inferring unsupported details.
+- Updated the same user-profile block with literal answers collected directly from the participant in a follow-up prompt.
+
 ---
 
 **Note**: Usually filled by the AI.
